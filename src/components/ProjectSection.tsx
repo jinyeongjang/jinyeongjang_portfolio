@@ -1,11 +1,12 @@
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { IoDocumentTextOutline } from 'react-icons/io5';
 import { motion } from 'framer-motion';
 
 const projects = [
   {
     title: '밥피엔스',
     description: '당신의 미각을 깨우는 맞춤형 메뉴, 설렘',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', '네이버 검색등록 SEO'],
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', '네이버 검색등록 SEO', 'Kakao Map API'],
     githubLink: 'https://github.com/OZ-Coding-School/oz_03_collabo-005-FE',
     demoLink: 'https://www.babpiens.com/',
     period: '2024.08 - 2024.12~  유지보수 진행중',
@@ -14,7 +15,7 @@ const projects = [
   {
     title: '영화 검색 웹 애플리케이션',
     description: 'TMDB API를 활용한 영화 검색 정보 웹앱',
-    technologies: ['React', 'css3'],
+    technologies: ['React', 'css3', 'firebase'],
     githubLink: 'https://github.com/jinyeongjang/mini_project_01',
     demoLink: 'https://mini-project-01-seven.vercel.app/',
     period: '2024.06 - 2024.06',
@@ -23,7 +24,7 @@ const projects = [
   {
     title: '포도리더스 일정관리',
     description: '교회 사역자들을 위한 일정관리 앱',
-    technologies: ['React', 'Next.js', 'supabase'],
+    technologies: ['React', 'Next.js', 'supabase', 'google Oauth, kakao Oauth'],
     githubLink: 'https://github.com/jinyeongjang/pdo24_schedule_management',
     demoLink: 'https://pdo24-schedule-management.vercel.app/',
     period: '2024.09 - 2024.12~ 유지보수 진행중',
@@ -36,10 +37,10 @@ const projects = [
     githubLink: 'https://github.com/jinyeongjang/jinyeongjang_portfolio',
     demoLink: '',
     period: '2024.12 - 2024.12',
-    image: '/images/portfolio.png',
+    image: 'images/jinyeongjang_portfolio.jpg',
   },
   {
-    title: '(12월 개발예정) 홈페이지',
+    title: '(12월 개발예정) 홈페이지-개발계획수립단계',
     description: '매장용 POS 단말기 사업 홈페이지',
     technologies: ['React', 'TypeScript', 'Tailwind CSS'],
     githubLink: 'https://github.com/jinyeongjang/',
@@ -132,7 +133,7 @@ const ProjectSection = () => {
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:text-blue-800 flex items-center custom-hover-cursor"
                     >
-                      <FaExternalLinkAlt className="mr-2" /> 보기
+                      <IoDocumentTextOutline className="mr-2" /> 보기
                     </a>
                   )}
                 </div>

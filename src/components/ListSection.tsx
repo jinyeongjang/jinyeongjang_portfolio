@@ -1,20 +1,22 @@
-import { FaCode, FaTools } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa6';
+import { FaDatabase } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
+import { BsTools } from 'react-icons/bs';
 
 const listItems = [
   {
     title: 'Frontend',
-    icon: FaCode,
+    icon: FaReact,
     items: ['React', 'TypeScript', 'Tailwind CSS', 'Zustand'],
   },
   {
     title: 'Backend',
-    icon: FaCode,
+    icon: FaDatabase,
     items: ['Firebase, Supabase'],
   },
   {
     title: 'Tools & Platforms',
-    icon: FaTools,
+    icon: BsTools,
     items: ['Git', 'GitHub', 'Github actions', 'Docker', 'AWS', 'Vercel', 'Figma', 'Postman'],
   },
 ];
