@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+}
+
+.custom-cursor {
+  cursor: url('/cursor/pointer-light.png'), auto;
+}
+
+.custom-hover-cursor:hover {
+  cursor: url('/cursor/link-light.png'), auto;
+}
