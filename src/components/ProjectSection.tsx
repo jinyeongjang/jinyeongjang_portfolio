@@ -24,7 +24,7 @@ const projects = [
   {
     title: '포도리더스 일정관리',
     description: '교회 사역자들을 위한 일정관리 앱',
-    technologies: ['React', 'Next.js', 'supabase', 'google Oauth, kakao Oauth'],
+    technologies: ['React', 'Next.js', 'supabase', 'google Oauth'],
     githubLink: 'https://github.com/jinyeongjang/pdo24_schedule_management',
     demoLink: 'https://pdo24-schedule-management.vercel.app/',
     period: '2024.09 - 2024.12~ 유지보수 진행중',
