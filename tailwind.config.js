@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const config = {
+module.exports = {
   darkMode: ['class'],
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -72,10 +72,3 @@ const config = {
   },
   plugins: [require('tailwindcss-animate')],
 };
-
-// ESM 과 CommonJS를 지원하기 위한 코드
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = config;
-}
-
-export default config;
