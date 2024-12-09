@@ -76,9 +76,7 @@ const EducationSection = () => {
                     key={imgIndex}
                     src={image}
                     alt={`${education.institution} image ${imgIndex + 1}`}
-                    className={`h-[300px] rounded-lg object-cover p-1 ${
-                      index === 0 ? 'w-1/4' : index === 1 ? 'w-2/2' : 'w-2/4'
-                    }`}
+                    className={`h-[300px] rounded-lg object-cover p-1 ${index === 0 ? 'w-1/4' : 'w-2/2'}`}
                   />
                 ))}
               </div>
