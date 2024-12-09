@@ -6,7 +6,14 @@ const projects = [
   {
     title: '밥피엔스',
     description: '당신의 미각을 깨우는 맞춤형 메뉴, 설렘',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', '네이버 검색등록 SEO', 'Kakao Map API'],
+    technologies: [
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      '네이버 검색등록 SEO',
+      'Kakao Map API',
+      'PWA',
+    ],
     githubLink: 'https://github.com/OZ-Coding-School/oz_03_collabo-005-FE',
     demoLink: 'https://www.babpiens.com/',
     period: '2024.08 - 2024.12~  유지보수 진행중',
