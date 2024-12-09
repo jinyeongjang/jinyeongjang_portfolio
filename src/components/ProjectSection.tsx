@@ -12,7 +12,7 @@ const projects = [
       'Tailwind CSS',
       '네이버 검색등록 SEO',
       'Kakao Map API',
-
+      'PWA',
     ],
     githubLink: 'https://github.com/OZ-Coding-School/oz_03_collabo-005-FE',
     demoLink: 'https://www.babpiens.com/',
