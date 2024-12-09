@@ -13,10 +13,12 @@ const educationItems = [
       '컴퓨터공학과 학과대표',
       '사상구청장 표창장',
     ],
-    image1: '/images/940429_장진영_컴퓨터공학과_학위증서.jpg',
-    image2: '/images/940429_장진영_컴퓨터공학과_학과대표_임명장.jpg',
-    image3: '/images/940429_장진영_사회복지빅데이터_학위증서.jpg',
-    image4: '/images/940429_장진영_표창장.jpg',
+    images: [
+      '/images/940429_장진영_컴퓨터공학과_학위증서.jpg',
+      '/images/940429_장진영_컴퓨터공학과_학과대표_임명장.jpg',
+      '/images/940429_장진영_사회복지빅데이터_학위증서.jpg',
+      '/images/940429_장진영_표창장.jpg',
+    ],
   },
   {
     degree1: 'AWS와 오즈코딩스쿨이 함께 만든 커리큘럼 bootcamp - Frontend Developer',
@@ -33,8 +35,7 @@ const educationItems = [
         하였습니다.
       </>,
     ],
-    image1: '/images/오즈 KDT 수료증 장진영.png',
-    image2: '/images/오즈 KDT 과제상 장진영.png',
+    images: ['/images/오즈 KDT 수료증 장진영.png', '/images/오즈 KDT 과제상 장진영.png'],
   },
   {
     degree1: 'AWS Jam',
@@ -44,7 +45,7 @@ const educationItems = [
     details: [
       'AWS jam - AWS 코리아 사옥에서 JAM 해커톤 형식으로 원데이 교육 수강 - 실습 AWS기초부터 심화까지 역량 익히기 AWS EC2, S3, RDS, CloudFront, User, 보안, 마이그레이션, DevOps, AI/ML',
     ],
-    image1: '../images/940429_장진영_AWSJAM_Certification.png',
+    images: ['../images/940429_장진영_AWSJAM_Certification.png'],
   },
 ];
 
@@ -67,37 +68,21 @@ const EducationSection = () => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border-l-4 border-green-500 flex"
+              className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border-l-4 border-green-500 flex flex-col md:flex-row"
             >
-              <div className="w-full h-full mr-6 flex space">
-                <img
-                  src={education.image1}
-                  alt={`${education.institution} certificate`}
-                  className="w-full h-auto rounded-lg object-cover"
-                />
-                {education.image2 && (
+              <div className="w-full md:w-2/2 mb-4 md:mb-0 md:mr-6 flex flex-wrap justify-center items-center">
+                {education.images.map((image, imgIndex) => (
                   <img
-                    src={education.image2}
-                    alt={`${education.institution} logo`}
-                    className="w-full h-auto rounded-lg object-cover"
+                    key={imgIndex}
+                    src={image}
+                    alt={`${education.institution} image ${imgIndex + 1}`}
+                    className={`h-[300px] rounded-lg object-cover p-1 ${
+                      index === 0 ? 'w-1/4' : index === 1 ? 'w-2/2' : 'w-2/4'
+                    }`}
                   />
-                )}
-                {index === 0 && education.image3 && (
-                  <img
-                    src={education.image3}
-                    alt={`${education.institution} additional`}
-                    className="w-full h-auto rounded-lg object-cover"
-                  />
-                )}
-                {index === 0 && education.image4 && (
-                  <img
-                    src={education.image4}
-                    alt={`${education.institution} extra`}
-                    className="w-full h-auto rounded-lg object-cover"
-                  />
-                )}
+                ))}
               </div>
-              <div className="w-3/4">
+              <div className="w-full md:w-2/3">
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h3 className="text-xl font-semibold text-gray-800">{education.degree1}</h3>
