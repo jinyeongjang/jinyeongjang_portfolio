@@ -6,14 +6,7 @@ const projects = [
   {
     title: '밥피엔스',
     description: '당신의 미각을 깨우는 맞춤형 메뉴, 설렘',
-    technologies: [
-      'React',
-      'TypeScript',
-      'Tailwind CSS',
-      '네이버 검색등록 SEO',
-      'Kakao Map API',
-      'PWA',
-    ],
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', '네이버 검색등록 SEO', 'Kakao Map API', 'PWA'],
     githubLink: 'https://github.com/OZ-Coding-School/oz_03_collabo-005-FE',
     demoLink: 'https://www.babpiens.com/',
     period: '2024.08 - 2024.12~  유지보수 진행중',
@@ -47,13 +40,13 @@ const projects = [
     image: 'images/jinyeongjang_portfolio.jpg',
   },
   {
-    title: '(12월 개발예정) 홈페이지-개발계획수립단계',
-    description: '매장용 POS 단말기 사업 홈페이지',
+    title: '홈페이지 pos, 키오스크 단말 사업자',
+    description: '매장용 사업 홈페이지',
     technologies: ['React', 'TypeScript', 'Tailwind CSS'],
-    githubLink: 'https://github.com/jinyeongjang/',
-    demoLink: '',
+    githubLink: 'https://github.com/jinyeongjang/Project5',
+    demoLink: 'https://d2b5qs8coxe0hq.cloudfront.net/',
     period: '2024.12~',
-    image: '/images/portfolio.png',
+    image: '/images/posandkioskwebsite.jpg',
   },
 ];
 
@@ -114,10 +107,7 @@ const ProjectSection = () => {
                 </div>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full"
-                    >
+                    <span key={techIndex} className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
                       {tech}
                     </span>
                   ))}
