@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="bg-gray-500 text-white p-4 shadow-md">
-      <div className="w-[1500px] flex justify-between items-center">
-        <div className="ml-2 text-2xl font-bold">
-          <Link to="/" className="hover:text-gray-300 transition-colors custom-hover-cursor">
+    <header className="w-full bg-gray-500 p-4 text-white shadow-md">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4">
+        <div className="text-xl font-bold sm:text-2xl">
+          <Link to="/" className="custom-hover-cursor transition-colors hover:text-gray-300">
             JinYeong Portfolio
           </Link>
         </div>
