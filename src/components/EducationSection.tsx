@@ -21,6 +21,7 @@ const educationItems = [
       "/images/940429_장진영_BDU_리더상.jpg",
       "/images/940429_장진영_컴퓨터공학과_학과대표_임명장.jpg",
       "/images/940429_장진영_사회복지빅데이터_학위증서.jpg",
+      "/images/940429_장진영_동원종합사회복지관우수강사.jpg",
     ],
   },
   {
@@ -126,7 +127,7 @@ const EducationSection = () => {
 
                 {education.images.length > 0 && (
                   <div className="mt-4 border-t border-gray-100 pt-2 sm:mt-6">
-                    <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3 md:grid-cols-4 lg:grid-cols-5">
+                    <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3 md:grid-cols-4 lg:grid-cols-6">
                       {education.images.map((image, imgIndex) => (
                         <div
                           key={imgIndex}
